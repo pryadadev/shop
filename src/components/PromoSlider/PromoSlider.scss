@@ -1,0 +1,75 @@
+.promo-slider {
+    user-select: none;
+    cursor: grab;
+    width: 100vw;
+    overflow: hidden;
+
+
+    .container {
+        display: flex;
+        height: 210px;
+        width: 100%;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        border-top: 1px solid #dfdfe1;
+        border-bottom: 1px solid #dfdfe1;
+    }
+}
+
+.slide {
+    flex: 1 0 100%;
+    height: 100%;
+    scroll-snap-align: start;
+
+    // TODO: TEMP BIGGER NUMBER
+    font-size: 6rem;
+    padding-top: 2rem;
+    color: white;
+    text-align: center;
+    // TODO: TEMP BIGGER NUMBER
+}
+
+#slide-1 {
+    background-color: var(--color-ex-1);
+}
+
+#slide-2 {
+    background-color: var(--color-ex-2);
+}
+
+#slide-3 {
+    background-color: var(--color-ex-3);
+}
+
+#slide-4 {
+    background-color: var(--color-ex-4);
+}
+
+#slide-5 {
+    background-color: var(--color-ex-5);
+}
+
+#slide-6 {
+    background-color: var(--color-ex-6);
+}
+
+#slide-7 {
+    background-color: var(--color-ex-7);
+}
+
+#slide-8 {
+    background-color: var(--color-ex-8);
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    a {
+        color: black;
+        background-color: #8B3DFF;
+        padding: 1rem;
+        border-radius: 9999rem;
+    }
+}

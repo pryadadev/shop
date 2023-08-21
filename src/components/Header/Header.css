@@ -1,0 +1,76 @@
+.Header {
+  width: 100vw;
+  height: 3.4375rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 -29px 30px 30px rgba(0, 0, 0, 0.12);
+}
+.Header .menu-button {
+  flex: 0 1 55px;
+  height: 100%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+.Header .left-menu {
+  position: absolute;
+  z-index: 1000;
+  width: 100vw;
+  height: calc(100dvh - 55px);
+  background-color: white;
+  top: 55px;
+  left: -100vw;
+  transition: left 0.3s ease-out;
+}
+.Header .left-menu-open {
+  left: 0;
+}
+.Header .logo-name-container {
+  flex: 0 1 180px;
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  cursor: pointer;
+  user-select: none;
+}
+.Header .logo-name-container .logo {
+  flex-shrink: 0;
+  height: 1.75rem;
+  width: 1.75rem;
+}
+.Header .logo-name-container .site-name {
+  font-size: 1.25rem;
+  font-family: "Montserrat", sans-serif;
+  color: var(--main-color);
+  font-weight: bold;
+  text-transform: uppercase;
+  user-select: none;
+  letter-spacing: 0.05em;
+}
+.Header .logo-name-container .site-name .wave-word {
+  letter-spacing: normal;
+}
+.Header .search-button {
+  flex: 0 1 55px;
+  height: 100%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+.Header .search-button .search-button-icon {
+  padding: 0.125rem;
+}
+
+.icon {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+/*# sourceMappingURL=Header.css.map */
