@@ -1,6 +1,7 @@
+$count-slides: 8;
+
 .promo-slider {
     user-select: none;
-    cursor: grab;
     width: 100vw;
     overflow: hidden;
 
@@ -11,9 +12,14 @@
         width: 100%;
         overflow-x: auto;
         scroll-snap-type: x mandatory;
+        scroll-snap-stop: always;
         scroll-behavior: smooth;
+        cursor: pointer;
         border-top: 1px solid #dfdfe1;
         border-bottom: 1px solid #dfdfe1;
+        &::-webkit-scrollbar {
+            display: none;
+        }
     }
 }
 
@@ -30,46 +36,8 @@
     // TODO: TEMP BIGGER NUMBER
 }
 
-#slide-1 {
-    background-color: var(--color-ex-1);
-}
-
-#slide-2 {
-    background-color: var(--color-ex-2);
-}
-
-#slide-3 {
-    background-color: var(--color-ex-3);
-}
-
-#slide-4 {
-    background-color: var(--color-ex-4);
-}
-
-#slide-5 {
-    background-color: var(--color-ex-5);
-}
-
-#slide-6 {
-    background-color: var(--color-ex-6);
-}
-
-#slide-7 {
-    background-color: var(--color-ex-7);
-}
-
-#slide-8 {
-    background-color: var(--color-ex-8);
-}
-
-.nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    a {
-        color: black;
-        background-color: #8B3DFF;
-        padding: 1rem;
-        border-radius: 9999rem;
+@for $i from 1 through $count-slides {
+    #slide-#{$i} {
+        background-color: var(--color-ex-#{$i});
     }
 }

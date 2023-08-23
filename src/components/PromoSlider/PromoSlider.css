@@ -1,6 +1,5 @@
 .promo-slider {
   user-select: none;
-  cursor: grab;
   width: 100vw;
   overflow: hidden;
 }
@@ -10,9 +9,14 @@
   width: 100%;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
+  scroll-snap-stop: always;
   scroll-behavior: smooth;
+  cursor: pointer;
   border-top: 1px solid #dfdfe1;
   border-bottom: 1px solid #dfdfe1;
+}
+.promo-slider .container::-webkit-scrollbar {
+  display: none;
 }
 
 .slide {
@@ -55,18 +59,6 @@
 
 #slide-8 {
   background-color: var(--color-ex-8);
-}
-
-.nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-.nav a {
-  color: black;
-  background-color: #8B3DFF;
-  padding: 1rem;
-  border-radius: 9999rem;
 }
 
 /*# sourceMappingURL=PromoSlider.css.map */
