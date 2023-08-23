@@ -12,7 +12,6 @@ $count-slides: 8;
         width: 100%;
         overflow-x: auto;
         scroll-snap-type: x mandatory;
-        scroll-snap-stop: always;
         scroll-behavior: smooth;
         cursor: pointer;
         border-top: 1px solid #dfdfe1;
