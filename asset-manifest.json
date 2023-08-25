@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/shop/static/css/main.b22b15c4.css",
+    "main.css": "/shop/static/css/main.dff4b90a.css",
     "main.js": "/shop/static/js/main.354e7897.js",
     "static/media/laptop-new.jpg": "/shop/static/media/laptop-new.2bb3053497b6e55cd48a.jpg",
     "static/media/videocard.jpg": "/shop/static/media/videocard.9737edf858172633d99e.jpg",
@@ -25,11 +25,11 @@
     "static/media/arrow-right.svg": "/shop/static/media/arrow-right.3da10e8d31ee2c6254f5c51f7d957711.svg",
     "static/media/bars-3.svg": "/shop/static/media/bars-3.1b7a9fa59f6cb8f1c27a3d95f59cd726.svg",
     "static/media/x-mark.svg": "/shop/static/media/x-mark.8e74f31495ae7e50970d405d68d1a76c.svg",
-    "main.b22b15c4.css.map": "/shop/static/css/main.b22b15c4.css.map",
+    "main.dff4b90a.css.map": "/shop/static/css/main.dff4b90a.css.map",
     "main.354e7897.js.map": "/shop/static/js/main.354e7897.js.map"
   },
   "entrypoints": [
-    "static/css/main.b22b15c4.css",
+    "static/css/main.dff4b90a.css",
     "static/js/main.354e7897.js"
   ]
 }
