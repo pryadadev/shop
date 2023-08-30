@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/shop/static/css/main.44c89032.css",
-    "main.js": "/shop/static/js/main.953e43b1.js",
+    "main.css": "/shop/static/css/main.679aa010.css",
+    "main.js": "/shop/static/js/main.9dd0bf01.js",
     "static/media/laptop.jpg": "/shop/static/media/laptop.2bb3053497b6e55cd48a.jpg",
     "static/media/videocard.jpg": "/shop/static/media/videocard.9737edf858172633d99e.jpg",
     "static/media/monitor.jpg": "/shop/static/media/monitor.f8ff450a976776218e6c.jpg",
@@ -44,11 +44,11 @@
     "static/media/bars-3.svg": "/shop/static/media/bars-3.1b7a9fa59f6cb8f1c27a3d95f59cd726.svg",
     "static/media/x-mark.svg": "/shop/static/media/x-mark.8e74f31495ae7e50970d405d68d1a76c.svg",
     "static/media/menu-arrow-right.svg": "/shop/static/media/menu-arrow-right.013be0a4a86bd4bae2a170d589b577e5.svg",
-    "main.44c89032.css.map": "/shop/static/css/main.44c89032.css.map",
-    "main.953e43b1.js.map": "/shop/static/js/main.953e43b1.js.map"
+    "main.679aa010.css.map": "/shop/static/css/main.679aa010.css.map",
+    "main.9dd0bf01.js.map": "/shop/static/js/main.9dd0bf01.js.map"
   },
   "entrypoints": [
-    "static/css/main.44c89032.css",
-    "static/js/main.953e43b1.js"
+    "static/css/main.679aa010.css",
+    "static/js/main.9dd0bf01.js"
   ]
 }
