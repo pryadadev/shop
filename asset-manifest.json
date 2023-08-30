@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/shop/static/css/main.679aa010.css",
-    "main.js": "/shop/static/js/main.9dd0bf01.js",
+    "main.css": "/shop/static/css/main.965a7a8c.css",
+    "main.js": "/shop/static/js/main.84f652b1.js",
     "static/media/laptop.jpg": "/shop/static/media/laptop.2bb3053497b6e55cd48a.jpg",
     "static/media/videocard.jpg": "/shop/static/media/videocard.9737edf858172633d99e.jpg",
     "static/media/monitor.jpg": "/shop/static/media/monitor.f8ff450a976776218e6c.jpg",
@@ -29,10 +29,13 @@
     "static/media/telegram.svg": "/shop/static/media/telegram.dfc23f3ff66078821260c99a89a0ee10.svg",
     "static/media/sale.svg": "/shop/static/media/sale.2d41b04e32c378b8aee0e855f9cd708f.svg",
     "static/media/dzen.svg": "/shop/static/media/dzen.6c6f8f917847f6a7440fb76168ed8966.svg",
+    "static/media/office.svg": "/shop/static/media/office.53c1dbc55cc2fd1103ebd34d39e6fd47.svg",
+    "static/media/gamepad.svg": "/shop/static/media/gamepad.e5f29aca6b0b725208dae78f2a5624e1.svg",
     "static/media/vk.svg": "/shop/static/media/vk.1f2472a09408deb77460f9154417e58b.svg",
     "static/media/delivery.svg": "/shop/static/media/delivery.382c43cf4a8258b408043db838c6425b.svg",
     "static/media/tiktok.svg": "/shop/static/media/tiktok.9e2fc5a7e2e287de851102c26d8168d0.svg",
     "static/media/cpu.svg": "/shop/static/media/cpu.13fd2fb712cd11de3efaa26284e630a7.svg",
+    "static/media/home.svg": "/shop/static/media/home.36d6f1b33e581e5f0f935007b36d4c4b.svg",
     "static/media/cube.svg": "/shop/static/media/cube.d1d7429fed5bf5ef1879009aa432af67.svg",
     "static/media/document.svg": "/shop/static/media/document.eefe050fe803f8f83427a2ca6cb6b8fa.svg",
     "static/media/youtube.svg": "/shop/static/media/youtube.b3b27f3ec19bfed7ecca58cfb06a9f66.svg",
@@ -44,11 +47,11 @@
     "static/media/bars-3.svg": "/shop/static/media/bars-3.1b7a9fa59f6cb8f1c27a3d95f59cd726.svg",
     "static/media/x-mark.svg": "/shop/static/media/x-mark.8e74f31495ae7e50970d405d68d1a76c.svg",
     "static/media/menu-arrow-right.svg": "/shop/static/media/menu-arrow-right.013be0a4a86bd4bae2a170d589b577e5.svg",
-    "main.679aa010.css.map": "/shop/static/css/main.679aa010.css.map",
-    "main.9dd0bf01.js.map": "/shop/static/js/main.9dd0bf01.js.map"
+    "main.965a7a8c.css.map": "/shop/static/css/main.965a7a8c.css.map",
+    "main.84f652b1.js.map": "/shop/static/js/main.84f652b1.js.map"
   },
   "entrypoints": [
-    "static/css/main.679aa010.css",
-    "static/js/main.9dd0bf01.js"
+    "static/css/main.965a7a8c.css",
+    "static/js/main.84f652b1.js"
   ]
 }
