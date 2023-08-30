@@ -15,19 +15,6 @@
   justify-content: center;
   user-select: none;
 }
-.Header .left-menu {
-  position: absolute;
-  z-index: 1000;
-  width: 100vw;
-  height: calc(100dvh - 55px);
-  background-color: white;
-  top: 55px;
-  left: -100vw;
-  transition: left 0.3s ease-out;
-}
-.Header .left-menu-open {
-  left: 0;
-}
 .Header .logo-name-container {
   flex: 0 1 180px;
   display: flex;
@@ -55,7 +42,8 @@
 .Header .logo-name-container .site-name .wave-word {
   letter-spacing: normal;
 }
-.Header .search-button {
+.Header .search-section {
+  position: relative;
   flex: 0 1 55px;
   height: 100%;
   cursor: pointer;
@@ -64,8 +52,59 @@
   justify-content: center;
   user-select: none;
 }
-.Header .search-button .search-button-icon {
+.Header .search-section .search-button-icon {
   padding: 0.125rem;
+}
+.Header .search-section .search-input-box {
+  position: absolute;
+  top: 0;
+  background-color: #fff;
+  height: 100%;
+  z-index: 1000;
+  transition: all 300ms ease-out;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.Header .search-section .search-input-box .search-input {
+  transition: opacity 300ms ease-out;
+  cursor: pointer;
+  position: relative;
+  height: 45px;
+  border-radius: 0.5rem;
+  border: 0;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.95rem;
+}
+.Header .search-section .search-input-box .search-input::selection {
+  background: color-mix(in srgb, var(--main-color) 50%, rgba(255, 255, 255, 0.2));
+}
+.Header .search-section .search-input-box .search-inputfocus {
+  outline-color: var(--main-color);
+}
+.Header .search-section .search-input-box .search-input:focus-visible {
+  outline: none;
+}
+.Header .search-section .search-input-box .search-input-closed {
+  width: 0;
+  opacity: 0;
+}
+.Header .search-section .search-input-box .search-input-open {
+  width: 100%;
+  opacity: 1;
+  padding: 0 2.5rem 0 1.75rem;
+}
+.Header .search-section .search-input-box-closed {
+  left: 0;
+  width: 0;
+}
+.Header .search-section .search-input-box-open {
+  left: calc((100vw - 55px) * -1);
+  width: calc(100vw - 55px);
+  padding-left: 16px;
 }
 
 .icon {

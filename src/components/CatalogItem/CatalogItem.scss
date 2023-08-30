@@ -1,0 +1,44 @@
+.CatalogItem {
+    width: 100%;
+    height: 116px;
+    box-shadow: rgba(30, 31, 33, 0.12) 0 5px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+    text-align: center;
+    padding: 0 8px;
+
+    .catalog-img {
+        height: 48px;
+        object-fit: contain;
+        object-position: center center;
+    }
+
+    .catalog-label {
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 500;
+
+        .label-text {
+            width: min-content;
+        }
+
+        .arrow-right-container {
+            display: inline-block;
+            padding-left: 4px;
+            height: 14px;
+            .arrow-right {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+}

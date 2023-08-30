@@ -1,0 +1,15 @@
+$category-number: 2;
+
+.Categories {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat($category-number, 1fr);
+    grid-auto-rows: min-content;
+    gap: 10px;
+
+    .categories-header {
+        grid-column: 1 / calc($category-number + 1);
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+}

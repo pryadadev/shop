@@ -16,21 +16,6 @@
         user-select: none;
     }
 
-    .left-menu {
-        position: absolute;
-        z-index: 1000;
-        width: 100vw;
-        height: calc(100dvh - 55px);
-        background-color: white;
-        top: 55px;
-        left: -100vw;
-        transition: left 0.3s ease-out;
-
-        &-open {
-            left: 0;
-        }
-    }
-
     .logo-name-container {
         flex: 0 1 180px;
         display: flex;
@@ -62,7 +47,8 @@
         }
     }
 
-    .search-button {
+    .search-section {
+        position: relative;
         flex: 0 1 55px;
         height: 100%;
         cursor: pointer;
@@ -73,6 +59,66 @@
 
         .search-button-icon {
             padding: 0.125rem;
+        }
+
+        .search-input-box {
+            position: absolute;
+            top: 0;
+            background-color: #fff;
+            height: 100%;
+            z-index: 1000;
+            transition: all 300ms ease-out;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+
+            .search-input {
+                transition: opacity 300ms ease-out;
+                cursor: pointer;
+                position: relative;
+                height: 45px;
+                border-radius: 0.5rem;
+                border: 0;
+                background-color: #f0f0f0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 0.95rem;
+
+                &::selection {
+                    background: color-mix(in srgb, var(--main-color) 50%, rgba(255,255,255,0.2));
+                }
+
+                &focus {
+                    outline-color: var(--main-color);
+
+                }
+
+                &:focus-visible {
+                    outline: none;
+                }
+            }
+
+            .search-input-closed {
+                width: 0;
+                opacity: 0;
+            }
+
+            .search-input-open {
+                width: calc(100%);
+                opacity: 1;
+                padding: 0 2.5rem 0 1.75rem;
+            }
+        }
+        .search-input-box-closed {
+            left: 0;
+            width: 0;
+        }
+
+        .search-input-box-open {
+            left: calc((100vw - 55px)*-1);
+            width: calc(100vw - 55px);
+            padding-left: 16px;
         }
     }
 }
