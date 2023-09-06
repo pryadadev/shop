@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/shop/static/css/main.1030a5bf.css",
-    "main.js": "/shop/static/js/main.77c93d3f.js",
-    "static/js/364.b14bf70f.chunk.js": "/shop/static/js/364.b14bf70f.chunk.js",
+    "main.css": "/shop/static/css/main.d474e4ac.css",
+    "main.js": "/shop/static/js/main.bdde144c.js",
+    "static/js/364.42681b3c.chunk.js": "/shop/static/js/364.42681b3c.chunk.js",
     "static/media/laptop.jpg": "/shop/static/media/laptop.2bb3053497b6e55cd48a.jpg",
     "static/media/videocard.jpg": "/shop/static/media/videocard.9737edf858172633d99e.jpg",
     "static/media/monitor.jpg": "/shop/static/media/monitor.f8ff450a976776218e6c.jpg",
@@ -46,7 +46,9 @@
     "static/media/home.svg": "/shop/static/media/home.36d6f1b33e581e5f0f935007b36d4c4b.svg",
     "static/media/cube.svg": "/shop/static/media/cube.d1d7429fed5bf5ef1879009aa432af67.svg",
     "static/media/cart.svg": "/shop/static/media/cart.1153bed232a08ae78666ef4a8d5c40d6.svg",
+    "static/media/homepage.svg": "/shop/static/media/homepage.c4d0b2fcce9ed806b3d617e64dd02bf9.svg",
     "static/media/mastercard.svg": "/shop/static/media/mastercard.4247882b57966bb8bba0458a0b5de386.svg",
+    "static/media/user.svg": "/shop/static/media/user.44c10f50d0e1d47d9df72be8b5b394e3.svg",
     "static/media/like.svg": "/shop/static/media/like.f90d025fe3f58b69f5339b9345d48597.svg",
     "static/media/document.svg": "/shop/static/media/document.eefe050fe803f8f83427a2ca6cb6b8fa.svg",
     "static/media/youtube.svg": "/shop/static/media/youtube.b3b27f3ec19bfed7ecca58cfb06a9f66.svg",
@@ -58,12 +60,12 @@
     "static/media/x-mark.svg": "/shop/static/media/x-mark.8e74f31495ae7e50970d405d68d1a76c.svg",
     "static/media/menu-arrow-right.svg": "/shop/static/media/menu-arrow-right.013be0a4a86bd4bae2a170d589b577e5.svg",
     "static/media/arrow-down.svg": "/shop/static/media/arrow-down.894e466793f8d016fda7e4480b13f6fb.svg",
-    "main.1030a5bf.css.map": "/shop/static/css/main.1030a5bf.css.map",
-    "main.77c93d3f.js.map": "/shop/static/js/main.77c93d3f.js.map",
-    "364.b14bf70f.chunk.js.map": "/shop/static/js/364.b14bf70f.chunk.js.map"
+    "main.d474e4ac.css.map": "/shop/static/css/main.d474e4ac.css.map",
+    "main.bdde144c.js.map": "/shop/static/js/main.bdde144c.js.map",
+    "364.42681b3c.chunk.js.map": "/shop/static/js/364.42681b3c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1030a5bf.css",
-    "static/js/main.77c93d3f.js"
+    "static/css/main.d474e4ac.css",
+    "static/js/main.bdde144c.js"
   ]
 }
