@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 -29px 30px 30px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 -27px 30px 30px rgba(0, 0, 0, 0.12);
 }
 .Header .menu-button {
   flex: 0 1 55px;

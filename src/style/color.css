@@ -1,5 +1,6 @@
 :root {
-    --font-color: #202124;
+  /*--font-color: #202124;*/
+  --font-color: #151528;
     --main-color: var(--color-ex-9);
     --color-ex-1: #301B28; /* maybe luxury ? */
     --color-ex-2: #882426; /* бардовый */

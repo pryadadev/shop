@@ -1,0 +1,21 @@
+.sales-leaders {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  .section-header {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0 20px;
+  }
+
+  .products-carousel {
+    padding: 0 20px 20px 20px;
+    overflow-x: scroll;
+
+    .carousel-wrapper {
+      display: flex;
+      gap: 20px;
+    }
+  }
+}

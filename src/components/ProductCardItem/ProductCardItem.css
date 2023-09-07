@@ -1,0 +1,116 @@
+.product-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  flex-basis: calc((100% - 20px) / 2);
+}
+.product-card-promotion {
+  height: 21px;
+  font-size: 10px;
+  line-height: 15px;
+  border-radius: 4px;
+  background-color: var(--main-color);
+  letter-spacing: 0.2px;
+  overflow: hidden;
+  padding: 3px 5px;
+  text-overflow: ellipsis;
+  color: #ffffff;
+  width: fit-content;
+  transform: scale(0.98, 0.98);
+}
+.product-card-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.product-card-img picture {
+  display: block;
+  height: 130px;
+  width: fit-content;
+  padding: 5px;
+}
+.product-card-img-img {
+  height: 120px;
+  width: fit-content;
+}
+.product-card-name {
+  box-sizing: content-box;
+  height: 45px;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.24px;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.product-card-price-without-sale {
+  font-size: 12px;
+  height: 15px;
+  letter-spacing: 0.24px;
+  line-height: 15px;
+  color: #5d5d64;
+  text-decoration: line-through;
+}
+.product-card-price {
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+}
+.product-card-price-currency {
+  margin-left: 5px;
+  color: #b3b3b7;
+}
+.product-card-action-button {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  height: 40px;
+  align-items: center;
+}
+.product-card-action-button-wrapper {
+  display: flex;
+  gap: 20px;
+}
+.product-card-action-button-favorite {
+  height: 20px;
+  width: 20px;
+  user-select: none;
+  cursor: pointer;
+}
+.product-card-action-button-favorite-icon {
+  height: 20px;
+  width: 20px;
+  color: #64646f;
+}
+.product-card-action-button-compare {
+  height: 20px;
+  width: 20px;
+  user-select: none;
+  cursor: pointer;
+}
+.product-card-action-button-compare-icon {
+  height: 20px;
+  width: 20px;
+  color: #64646f;
+}
+.product-card-action-button-cart {
+  height: 40px;
+  width: 40px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: var(--main-color);
+  user-select: none;
+  cursor: pointer;
+  transform: scale(0.97, 0.97);
+}
+.product-card-action-button-cart-icon {
+  height: 20px;
+  width: 20px;
+  color: #ffffff;
+}
+
+/*# sourceMappingURL=ProductCardItem.css.map */

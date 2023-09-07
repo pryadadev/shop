@@ -1,0 +1,70 @@
+.pc-build {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.pc-build-own {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0 -2px 30px 0 rgba(30, 31, 33, 0.12);
+  background-color: #f8f8f6;
+  border-radius: 2px;
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+}
+.pc-build-own-header {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.pc-build-own-button {
+  cursor: pointer;
+  user-select: none;
+  text-align: center;
+  font-weight: 500;
+  padding: 6px 0;
+  border: 1px solid var(--main-color);
+  border-radius: 8px;
+  font-size: 0.9rem;
+  color: var(--main-color);
+}
+.pc-build-by-users {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0 2px 30px 0 rgba(30, 31, 33, 0.12);
+  background-color: #f8f8f6;
+  border-radius: 2px;
+  padding: 20px;
+}
+.pc-build-by-users-header {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.pc-build-by-users-category {
+  list-style-type: none;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+}
+.pc-build-by-users-category-item {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  user-select: none;
+}
+.pc-build-by-users-category-item-icon {
+  height: 24px;
+  width: 24px;
+  fill: var(--main-color);
+}
+
+/*# sourceMappingURL=PcBuild.css.map */

@@ -24,9 +24,9 @@ const Categories = () => {
     return (
         <section className={'Categories'}>
             <h2 className='categories-header montserrat'>Популярные категории</h2>
-            {catalog.map((item) => {
-                return (<CatalogItem catalogNameEn={item.catalogNameEn} catalogNameRu={item.catalogNameRu}/>);
-            })}
+          {catalog.map((item) =>
+            <CatalogItem catalogNameEn={item.catalogNameEn} catalogNameRu={item.catalogNameRu}/>
+          )}
         </section>
     );
 };

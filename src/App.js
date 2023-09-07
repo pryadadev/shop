@@ -1,55 +1,64 @@
+/**
+ * Project Name: shop
+ * Description: real-like online store of digital products
+ *
+ * Author: Mikhail Pryada
+ * Email: pryadadev@gmail.com
+ * Date: 7th September 2023
+ */
+
 import React from 'react';
 import './App.css';
 import Header from "components/Header/Header";
 import PromoCarousel from "components/PromoCarousel/PromoCarousel";
 import Categories from "components/Categories/Categories";
-import {ReactComponent as GamepadIcon} from "svg/gamepad.svg";
-import {ReactComponent as HomeIcon} from "svg/home.svg";
-import {ReactComponent as OfficeIcon} from "svg/office.svg";
-import {ReactComponent as CubeIcon} from "svg/cube.svg";
+import PcBuild from "components/PcBuild/PcBuild";
+import ProductCarousel from 'components/ProductCarousel/ProductCarousel';
+import Footer from 'components/Footer/Footer';
 
 function App() {
 
-    return (
-        <div className="App">
-            <Header/>
-            <PromoCarousel/>
-            <main className='main-main'>
-                <Categories/>
+  const productCards = [
+    {
+      name: 'Смартфон Apple IPhone 14 Pro Max 512Gb, фиолетовый',
+      imgName: 'iphone14promaxviolet',
+      price: 119990
+    },
+    {
+      name: 'Смартфон Apple IPhone 14 Pro Max 512Gb, фиолетовый',
+      imgName: 'iphone14promaxviolet',
+      price: 119990
+    },
+    {
+      name: 'Смартфон Apple IPhone 14 Pro Max 512Gb, фиолетовый',
+      imgName: 'iphone14promaxviolet',
+      price: 119990
+    },
+    {
+      name: 'Смартфон Apple IPhone 14 Pro Max 512Gb, фиолетовый',
+      imgName: 'iphone14promaxviolet',
+      price: 119990
+    },
+    {
+      name: 'Смартфон Apple IPhone 14 Pro Max 512Gb, фиолетовый',
+      imgName: 'iphone14promaxviolet',
+      price: 119990
+    }
+  ];
 
-                {/*  Собрать компьютер блок  */}
-                <section className='pc-build'>
-                    <div className='pc-build-own'>
-                        <h2 className='pc-build-own-header montserrat'>Собрать компьютер</h2>
-                        <div className="pc-build-own-button montserrat">
-                            Создать свою сборку
-                        </div>
-                    </div>
-                    <div className='pc-build-by-users'>
-                        <h3 className='pc-build-by-users-header montserrat'>Пользовательские сборки</h3>
-                        <ul className='pc-build-by-users-category'> {/*  display: grid; 2 х 2  */}
-                            <li className='pc-build-by-users-category-item'>
-                                <GamepadIcon className='pc-build-by-users-category-item-icon'/>
-                                Игровые
-                            </li>
-                            <li className='pc-build-by-users-category-item'>
-                                <HomeIcon className='pc-build-by-users-category-item-icon'/>
-                                Для дома
-                            </li>
-                            <li className='pc-build-by-users-category-item'>
-                                <OfficeIcon className='pc-build-by-users-category-item-icon'/>
-                                Для офиса
-                            </li>
-                            <li className='pc-build-by-users-category-item'>
-                                <CubeIcon className='pc-build-by-users-category-item-icon'/>
-                                Для дизайна
-                            </li>
-                        </ul>
-                    </div>
-                </section>
-            </main>
-        </div>
-    );
+  return (
+    <div className="App">
+      <Header/>
+      <PromoCarousel/>
+      <main className='main-main'>
+        <Categories/>
+        <PcBuild/>
+        <ProductCarousel header={'Самые продаваемые'} productCards={productCards}/>
+        <ProductCarousel header={'Лучшие новинки'} productCards={productCards}/>
+      </main>
+      <Footer/>
+    </div>
+  );
 }
 
 export default App;

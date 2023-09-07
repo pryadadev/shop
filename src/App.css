@@ -5,78 +5,13 @@
   min-height: 100dvh;
   display: flex;
   flex-direction: column;
+  padding-bottom: 50px;
 }
 .App .main-main {
   padding: 20px 16px;
   display: flex;
   flex-direction: column;
   gap: 30px;
-}
-.App .main-main .pc-build {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.App .main-main .pc-build-own {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  box-shadow: rgba(30, 31, 33, 0.15) 0 2px 30px;
-  background-color: #f8f8f6;
-  border-radius: 2px;
-  padding: 20px;
-}
-.App .main-main .pc-build-own-header {
-  font-size: 1.2rem;
-  font-weight: 600;
-}
-.App .main-main .pc-build-own-button {
-  cursor: pointer;
-  user-select: none;
-  text-align: center;
-  font-weight: 500;
-  padding: 6px 0;
-  border: 1px solid var(--main-color);
-  border-radius: 8px;
-  font-size: 0.9rem;
-  color: var(--main-color);
-}
-.App .main-main .pc-build-by-users {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  box-shadow: rgba(30, 31, 33, 0.15) 0 5px 30px;
-  background-color: #f8f8f6;
-  border-radius: 2px;
-  padding: 20px;
-}
-.App .main-main .pc-build-by-users-header {
-  font-size: 1.2rem;
-  font-weight: 600;
-}
-.App .main-main .pc-build-by-users-category {
-  list-style-type: none;
-  display: grid;
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-columns: repeat(2, 1fr);
-  justify-items: center;
-}
-.App .main-main .pc-build-by-users-category-item {
-  height: 40px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: 500;
-  cursor: pointer;
-  user-select: none;
-}
-.App .main-main .pc-build-by-users-category-item-icon {
-  height: 24px;
-  width: 24px;
-  fill: var(--main-color);
 }
 
 /*# sourceMappingURL=App.css.map */

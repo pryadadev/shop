@@ -1,0 +1,20 @@
+.sales-leaders {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.sales-leaders .section-header {
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0 20px;
+}
+.sales-leaders .products-carousel {
+  padding: 0 20px 20px 20px;
+  overflow-x: scroll;
+}
+.sales-leaders .products-carousel .carousel-wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+/*# sourceMappingURL=ProductCarousel.css.map */
