@@ -1,8 +1,7 @@
 {
   "files": {
-    "main.css": "/shop/static/css/main.d474e4ac.css",
-    "main.js": "/shop/static/js/main.bdde144c.js",
-    "static/js/364.42681b3c.chunk.js": "/shop/static/js/364.42681b3c.chunk.js",
+    "main.css": "/shop/static/css/main.bc39a6d1.css",
+    "main.js": "/shop/static/js/main.bf5f45b8.js",
     "static/media/laptop.jpg": "/shop/static/media/laptop.2bb3053497b6e55cd48a.jpg",
     "static/media/videocard.jpg": "/shop/static/media/videocard.9737edf858172633d99e.jpg",
     "static/media/monitor.jpg": "/shop/static/media/monitor.f8ff450a976776218e6c.jpg",
@@ -60,12 +59,11 @@
     "static/media/x-mark.svg": "/shop/static/media/x-mark.8e74f31495ae7e50970d405d68d1a76c.svg",
     "static/media/menu-arrow-right.svg": "/shop/static/media/menu-arrow-right.013be0a4a86bd4bae2a170d589b577e5.svg",
     "static/media/arrow-down.svg": "/shop/static/media/arrow-down.894e466793f8d016fda7e4480b13f6fb.svg",
-    "main.d474e4ac.css.map": "/shop/static/css/main.d474e4ac.css.map",
-    "main.bdde144c.js.map": "/shop/static/js/main.bdde144c.js.map",
-    "364.42681b3c.chunk.js.map": "/shop/static/js/364.42681b3c.chunk.js.map"
+    "main.bc39a6d1.css.map": "/shop/static/css/main.bc39a6d1.css.map",
+    "main.bf5f45b8.js.map": "/shop/static/js/main.bf5f45b8.js.map"
   },
   "entrypoints": [
-    "static/css/main.d474e4ac.css",
-    "static/js/main.bdde144c.js"
+    "static/css/main.bc39a6d1.css",
+    "static/js/main.bf5f45b8.js"
   ]
 }
