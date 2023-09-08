@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/shop/static/css/main.dccc7190.css",
-    "main.js": "/shop/static/js/main.71d7d3d1.js",
+    "main.js": "/shop/static/js/main.02bd336b.js",
     "static/media/broken-robot.webp": "/shop/static/media/broken-robot.60ccc9f6f7a536edb031.webp",
     "static/media/laptop.jpg": "/shop/static/media/laptop.2bb3053497b6e55cd48a.jpg",
     "static/media/videocard.jpg": "/shop/static/media/videocard.9737edf858172633d99e.jpg",
@@ -61,10 +61,10 @@
     "static/media/menu-arrow-right.svg": "/shop/static/media/menu-arrow-right.013be0a4a86bd4bae2a170d589b577e5.svg",
     "static/media/arrow-down.svg": "/shop/static/media/arrow-down.894e466793f8d016fda7e4480b13f6fb.svg",
     "main.dccc7190.css.map": "/shop/static/css/main.dccc7190.css.map",
-    "main.71d7d3d1.js.map": "/shop/static/js/main.71d7d3d1.js.map"
+    "main.02bd336b.js.map": "/shop/static/js/main.02bd336b.js.map"
   },
   "entrypoints": [
     "static/css/main.dccc7190.css",
-    "static/js/main.71d7d3d1.js"
+    "static/js/main.02bd336b.js"
   ]
 }
