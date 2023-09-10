@@ -21,5 +21,9 @@
   color: #6d6d6d;
   position: relative;
 }
+.bottom-menu-item-link {
+  width: 52px;
+  height: 50px;
+}
 
 /*# sourceMappingURL=BottomMenu.css.map */

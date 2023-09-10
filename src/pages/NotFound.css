@@ -1,0 +1,21 @@
+.not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 16px;
+  text-align: center;
+}
+.not-found-icon {
+  width: 128px;
+  height: 128px;
+  object-fit: contain;
+  object-position: center center;
+}
+.not-found-text {
+  font-size: 28px;
+  line-height: 1.2;
+}
+
+/*# sourceMappingURL=NotFound.css.map */

@@ -1,63 +1,37 @@
 /**
- * Project Name: shop
+ * Project Name: Bytewave
  * Description: real-like online store of digital products
  *
  * Author: Mikhail Pryada
  * Email: pryadadev@gmail.com
- * Date: 7th September 2023
+ * Date: 8th September 2023
  */
 
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Header from "components/Header/Header";
-import PromoCarousel from "components/PromoCarousel/PromoCarousel";
-import Categories from "components/Categories/Categories";
-import PcBuild from "components/PcBuild/PcBuild";
-import ProductCarousel from 'components/ProductCarousel/ProductCarousel';
-import Footer from 'components/Footer/Footer';
+import Footer from "components/Footer/Footer";
+import ScrollToTop from "utils/ScrollToTop";
+import { publicRoutes, privateRoutes } from "routes";
 
 function App() {
 
-  const productCards = [
-    {
-      name: 'Смартфон Apple IPhone 14 Pro Max 512Gb, фиолетовый',
-      imgName: 'iphone14promaxviolet',
-      price: 119990
-    },
-    {
-      name: 'Смартфон Apple IPhone 14 Pro Max 512Gb, фиолетовый',
-      imgName: 'iphone14promaxviolet',
-      price: 119990
-    },
-    {
-      name: 'Смартфон Apple IPhone 14 Pro Max 512Gb, фиолетовый',
-      imgName: 'iphone14promaxviolet',
-      price: 119990
-    },
-    {
-      name: 'Смартфон Apple IPhone 14 Pro Max 512Gb, фиолетовый',
-      imgName: 'iphone14promaxviolet',
-      price: 119990
-    },
-    {
-      name: 'Смартфон Apple IPhone 14 Pro Max 512Gb, фиолетовый',
-      imgName: 'iphone14promaxviolet',
-      price: 119990
-    }
-  ];
-
   return (
-    <div className="App">
+    <BrowserRouter>
+      <ScrollToTop/>
       <Header/>
-      <PromoCarousel/>
-      <main className='main-main'>
-        <Categories/>
-        <PcBuild/>
-        <ProductCarousel header={'Самые продаваемые'} productCards={productCards}/>
-        <ProductCarousel header={'Лучшие новинки'} productCards={productCards}/>
-      </main>
+      <Routes>
+        {publicRoutes.map((route) =>
+          <Route
+            key={route.path}
+            path={route.path}
+            element={route.element}
+          />
+        )}
+      </Routes>
       <Footer/>
-    </div>
+    </BrowserRouter>
   );
 }
 

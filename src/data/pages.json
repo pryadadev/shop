@@ -1,0 +1,19 @@
+{
+  "pages": [
+    {
+      "path": "/",
+      "pageClassName": "home",
+      "componentName": "Home"
+    },
+    {
+      "path": "*",
+      "pageClassName": "not-found",
+      "componentName": "NotFound"
+    },
+    {
+      "path": "/catalog",
+      "pageClassName": "catalog",
+      "componentName": "Catalog"
+    }
+  ]
+}

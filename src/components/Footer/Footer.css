@@ -1,9 +1,17 @@
 .footer {
   background-color: #f5f5f6;
-  padding: 20px 16px;
+  margin-top: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.footer-wrapper {
+  padding: 20px 16px 70px 16px;
   display: flex;
   flex-direction: column;
   gap: 20px;
+  max-width: 1200px;
+  width: 100%;
 }
 .footer-separator {
   border-bottom: 1px solid #dfdfe1;
@@ -15,9 +23,9 @@
   gap: 20px;
 }
 .footer .email-subscription-header {
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.29;
+  font-weight: 400;
 }
 .footer .email-subscription-input {
   height: 40px;
@@ -27,10 +35,14 @@
   border-radius: 5px;
   width: 100%;
   min-height: 25px;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 1.29;
   outline: none;
   font-weight: 400;
+}
+.footer .email-subscription-input::placeholder {
+  color: #adadb4;
+  opacity: 0.7;
 }
 .footer .email-subscription-input:focus {
   border-color: var(--main-color);
@@ -57,12 +69,13 @@
   padding: 10px 0;
 }
 .footer .contacts-header {
-  font-size: 24px;
+  font-size: 32px;
+  line-height: 1.1;
   font-weight: 600;
 }
 .footer .contacts-address {
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 1.29;
   color: #2274A5;
   cursor: pointer;
   user-select: none;
@@ -70,18 +83,21 @@
 }
 .footer .contacts .phone-location-box {
   display: flex;
-  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px 20px;
 }
 .footer .contacts .phone-location-box .phone-number {
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 1.29;
   font-weight: 500;
   cursor: pointer;
   user-select: none;
 }
 .footer .contacts .phone-location-box .city {
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 1.29;
   display: flex;
   gap: 4px;
   cursor: pointer;
@@ -90,11 +106,12 @@
 .footer .contacts .phone-location-box .city-arrow {
   font-size: 10px;
   color: var(--main-color);
+  padding-right: 16px;
 }
 .footer .contacts .phone-location-box .city-arrow svg {
   width: 10px;
   height: 10px;
-  padding-top: 5px;
+  padding-top: 7px;
   box-sizing: content-box;
   color: var(--main-color);
   fill: var(--main-color);
@@ -116,15 +133,17 @@
 }
 .footer .contacts .contacts-social {
   display: flex;
-  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
 }
 .footer .contacts .contacts-social-item {
   box-sizing: content-box;
-  height: 30px;
-  width: 30px;
+  height: 32px;
+  width: 32px;
   cursor: pointer;
   user-select: none;
-  padding: 4px;
+  padding: 8px;
   fill: color-mix(in srgb, var(--main-color) 15%, rgba(0, 0, 0, 0.4));
 }
 .footer .legal {
@@ -134,12 +153,15 @@
   gap: 16px;
 }
 .footer .legal-name {
-  font-size: 12px;
-  line-height: 15px;
-  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.29;
+  font-weight: 500;
 }
 .footer .legal-partners {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 6px;
 }
 .footer .legal-partners-item {
@@ -151,9 +173,8 @@
   user-select: none;
 }
 .footer .legal-policy {
-  font-size: 12px;
-  line-height: 15px;
-  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
   width: fit-content;
   cursor: pointer;
   user-select: none;

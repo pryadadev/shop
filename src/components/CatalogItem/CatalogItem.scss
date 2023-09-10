@@ -1,44 +1,86 @@
-.CatalogItem {
-    width: 100%;
-    height: 116px;
-    box-shadow: rgba(30, 31, 33, 0.12) 0 5px 25px;
+.catalog-item {
+  width: 100%;
+  height: 116px;
+  box-shadow: rgba(30, 31, 33, 0.12) 0 5px 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  user-select: none;
+  text-align: center;
+  padding: 0 8px;
+
+  .catalog-img {
+    height: 48px;
+    object-fit: contain;
+    object-position: center center;
+  }
+
+  .catalog-label {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 500;
+
+    .label-text {
+      width: min-content;
+    }
+
+    .arrow-right-container {
+      display: inline-block;
+      padding-left: 4px;
+      height: 14px;
+
+      .arrow-right {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}
+
+.catalog-item-big {
+  height: 212px;
+  gap: 0;
+
+  picture.catalog-img {
+    flex-shrink: 0;
     display: flex;
-    flex-direction: column;
-    gap: 8px;
+    align-items: center;
+    padding-top: 18px;
+    font-size: 18px;
+    line-height: 1.29;
+    height: 150px;
+  }
+
+  img.catalog-img {
+    height: auto;
+    max-height: 104px;
+    max-width: 130px;
+  }
+
+  .catalog-label {
+    flex-shrink: 0;
+    display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
-    user-select: none;
-    text-align: center;
-    padding: 0 8px;
-
-    .catalog-img {
-        height: 48px;
-        object-fit: contain;
-        object-position: center center;
+    height: 62px;
+    padding-bottom: 18px;
+    font-size: 18px;
+    line-height: 1.29;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    .label-text {
+      width: 100%;
     }
 
-    .catalog-label {
-        font-size: 14px;
-        line-height: 18px;
-        font-weight: 500;
-
-        .label-text {
-            width: min-content;
-        }
-
-        .arrow-right-container {
-            display: inline-block;
-            padding-left: 4px;
-            height: 14px;
-            .arrow-right {
-                position: relative;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 20px;
-                height: 20px;
-            }
-        }
+    .arrow-right-container {
+      display: none;
     }
+  }
 }
