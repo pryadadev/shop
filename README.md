@@ -2,7 +2,6 @@
 
 ## Bytewave™ online store
 
-You can view the online store by following the link [shop](https://pryadadev.github.io/shop).
+Preview [Bytewave](https://pryadadev.github.io/shop).
 
-The "mobile first" approach was used.
-
+The "mobile first" approach was used. If you don't see a page adapted to large screens, then it doesn't exist yet.
