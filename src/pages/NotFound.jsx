@@ -3,7 +3,7 @@ import './NotFound.css';
 
 const NotFound = () => {
   const imageWebp = require('img/broken-robot.webp');
-  // const imageJpg = require(`img/broken-robot.jpg`);
+  const imageJpg = require(`img/broken-robot.jpg`);
 
   return (
     <div className="not-found montserrat">
@@ -12,8 +12,9 @@ const NotFound = () => {
       </div>
       <picture className="not-found-icon">
         <source srcSet={imageWebp} type='image/webp'/>
+        <source srcSet={imageJpg}/>
         <img
-          src={imageWebp}
+          src={imageJpg}
           alt="icon 404"
           loading='lazy'
           className="not-found-icon"

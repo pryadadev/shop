@@ -1,0 +1,46 @@
+.category-products {
+  max-width: 1200px;
+  padding: 20px 16px 40px 16px;
+  width: 100%;
+
+
+  .page-header-container {
+    font-size: 24px;
+    line-height: 1.1;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    .product-count {
+      font-weight: 600;
+    }
+  }
+
+  .control-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+
+    .catalog-select {
+      flex: 0 0 fit-content;
+      margin: 0;
+    }
+
+    .filter-container {
+      flex: 0 0 fit-content;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      border: 1px solid hsl(0, 0%, 80%);
+      border-radius: 4px;
+      padding: 6px 10px;
+
+      .filter-icon {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}

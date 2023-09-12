@@ -3,25 +3,6 @@
   padding: 20px 16px 40px 16px;
   width: 100%;
 }
-.catalog .breadcrumb {
-  list-style: none;
-  font-size: 14px;
-  line-height: 1.29;
-  margin-bottom: 16px;
-}
-.catalog .breadcrumb-item {
-  display: inline-block;
-}
-.catalog .breadcrumb-item-separator {
-  padding: 0 8px;
-}
-.catalog .breadcrumb-item-current {
-  color: var(--font-color-disabled);
-}
-.catalog .breadcrumb-item-link {
-  text-decoration: none;
-  color: var(--font-color);
-}
 .catalog .page-header {
   font-size: 28px;
   line-height: 1.1;

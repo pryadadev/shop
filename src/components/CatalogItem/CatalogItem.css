@@ -11,6 +11,8 @@
   user-select: none;
   text-align: center;
   padding: 0 8px;
+  text-decoration: none;
+  color: var(--font-color);
 }
 .catalog-item .catalog-img {
   height: 48px;

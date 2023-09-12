@@ -1,0 +1,23 @@
+.breadcrumb {
+  list-style: none;
+  font-size: 14px;
+  line-height: 1.29;
+  margin-bottom: 16px;
+
+  &-item {
+    display: inline-block;
+
+    &-separator {
+      padding: 0 8px;
+    }
+
+    &-current {
+      color: var(--font-color-disabled);
+    }
+
+    &-link {
+      text-decoration: none;
+      color: var(--font-color);
+    }
+  }
+}

@@ -1,38 +1,33 @@
-$count-slides: 8;
-
 .PromoCarousel {
-    box-sizing: content-box;
+  box-sizing: content-box;
+  height: 210px;
+  border-top: 1px solid #dfdfe1;
+  border-bottom: 1px solid #dfdfe1;
+  overflow: hidden;
+
+  li {
+    padding: 0;
+  }
+
+  div {
+    padding: 0;
+  }
+
+  .slide {
     height: 210px;
-    border-top: 1px solid #dfdfe1;
-    border-bottom: 1px solid #dfdfe1;
-    overflow: hidden;
+    user-select: none;
+    cursor: pointer;
+    object-fit: cover;
+    object-position: center center;
+    aspect-ratio: 2 / 1;
+  }
+}
 
-    li {
-        padding: 0;
-    }
-
-    div {
-        padding: 0;
-    }
-
+@media (min-width: 714px) {
+  .PromoCarousel {
+    height: 350px;
     .slide {
-        height: 210px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        user-select: none;
-        cursor: pointer;
-
-        // TODO: TEMP BIGGER NUMBER
-        font-size: 6rem;
-        color: white;
-        text-align: center;
-        // TODO: TEMP BIGGER NUMBER
+      height: 350px;
     }
-
-    @for $i from 1 through $count-slides {
-        #slide-#{$i} {
-            background-color: var(--color-ex-#{$i});
-        }
-    }
+  }
 }

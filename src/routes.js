@@ -1,7 +1,9 @@
 import {lazy} from "react";
+import {catalog} from "data/catalog";
 
 import Home from "pages/Home";
 import Catalog from "pages/Catalog";
+import CategoryProducts from "pages/CategoryProducts";
 
 const NotFound = lazy(() => import("pages/NotFound"));
 
@@ -15,7 +17,7 @@ export const publicRoutes = [
     element: <Home />,
   },
   {
-    path: "/home",
+    path: "/shop",
     element: <Home />,
   },
   {
@@ -25,5 +27,11 @@ export const publicRoutes = [
   {
     path: "*",
     element: <NotFound />,
-  }
+  },
+  ...catalog.map((item) => {
+    return {
+      path: `/catalog/${item.catalogCodeName}`,
+      element: <CategoryProducts productType={item.catalogCodeName} />
+    }
+  })
 ];

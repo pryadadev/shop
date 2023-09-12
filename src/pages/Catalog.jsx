@@ -1,10 +1,10 @@
 import React, {useEffect, useRef, useState} from "react";
 import "./Catalog.css";
 import CatalogItem from "components/CatalogItem/CatalogItem";
-import {Link, useLocation} from "react-router-dom";
+import {useLocation} from "react-router-dom";
 import PcBuild from "components/PcBuild/PcBuild";
 import Select from "react-select";
-import titleMap from "data/titleMap.json";
+import Breadcrumbs from "components/Breadcrumbs/Breadcrumbs";
 
 const Catalog = () => {
   const catalog = [
@@ -35,50 +35,11 @@ const Catalog = () => {
   const [sortedCatalog, setSortedCatalog] = useState(catalog);
   const [selectedOptionState, setSelectedOptionState] = useState(selectedOptionRef.current);
 
-  const breadcrumbSeparator = (index) => {
-    if (index === 0) {
-      return "";
-    } else {
-      return (
-        <span className="breadcrumb-item-separator">
-          &gt;
-        </span>
-      );
-    }
-  };
-  const pathnames = location.pathname.split("/").filter(Boolean); // filter(Boolean) убирает все falsy-значения
-  const renderBreadcrumbs = () => {
-    return (
-      <ul className="breadcrumb">
-        {/*  Пустая строка в начале добавляется для отображения домашней страницы  */}
-        {["", ...pathnames].map((item, index) => {
-          const displayName = titleMap.titleMap["/" + item];
-          return (
-            <li key={index} className="breadcrumb-item">
-              {breadcrumbSeparator(index)}
-              {/*  Последний элемент не является ссылкой  */}
-              {index === pathnames.length ? (
-                <span className="breadcrumb-item-current">
-                  {displayName}
-                </span>
-              ) : (
-                <Link to={`/${item}`} className="breadcrumb-item-link">
-                  {displayName}
-                </Link>
-              )}
-            </li>
-          );
-        })}
-      </ul>
-    );
-  };
-
   // Выполняется при первой загрузке + обновлении URL-параметров
   useEffect(() => {
     filterRef.current = searchParams.get("filter");
     selectedOptionRef.current = options.find((option) => option.value === filterRef.current);
     setSelectedOptionState(selectedOptionRef.current);
-    console.log("URL is update");
     if (filterRef.current === null || filterRef.current === "" || filterRef.current === "all") {
       setSortedCatalog(catalog);
     } else {
@@ -101,7 +62,7 @@ const Catalog = () => {
 
   return (
     <div className="catalog">
-      {renderBreadcrumbs()}
+      <Breadcrumbs/>
       <h1 className="page-header montserrat">Каталог товаров</h1>
       <Select
         id="select-filter"

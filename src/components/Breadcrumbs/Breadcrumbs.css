@@ -1,0 +1,21 @@
+.breadcrumb {
+  list-style: none;
+  font-size: 14px;
+  line-height: 1.29;
+  margin-bottom: 16px;
+}
+.breadcrumb-item {
+  display: inline-block;
+}
+.breadcrumb-item-separator {
+  padding: 0 8px;
+}
+.breadcrumb-item-current {
+  color: var(--font-color-disabled);
+}
+.breadcrumb-item-link {
+  text-decoration: none;
+  color: var(--font-color);
+}
+
+/*# sourceMappingURL=Breadcrumbs.css.map */

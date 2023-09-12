@@ -3,31 +3,6 @@
   padding: 20px 16px 40px 16px;
   width: 100%;
 
-
-  .breadcrumb {
-    list-style: none;
-    font-size: 14px;
-    line-height: 1.29;
-    margin-bottom: 16px;
-
-    &-item {
-      display: inline-block;
-
-      &-separator {
-        padding: 0 8px;
-      }
-
-      &-current {
-        color: var(--font-color-disabled);
-      }
-
-      &-link {
-        text-decoration: none;
-        color: var(--font-color);
-      }
-    }
-  }
-
   .page-header {
     font-size: 28px;
     line-height: 1.1;

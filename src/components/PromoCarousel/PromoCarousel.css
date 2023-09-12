@@ -13,38 +13,20 @@
 }
 .PromoCarousel .slide {
   height: 210px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   user-select: none;
   cursor: pointer;
-  font-size: 6rem;
-  color: white;
-  text-align: center;
+  object-fit: cover;
+  object-position: center center;
+  aspect-ratio: 2/1;
 }
-.PromoCarousel #slide-1 {
-  background-color: var(--color-ex-1);
-}
-.PromoCarousel #slide-2 {
-  background-color: var(--color-ex-2);
-}
-.PromoCarousel #slide-3 {
-  background-color: var(--color-ex-3);
-}
-.PromoCarousel #slide-4 {
-  background-color: var(--color-ex-4);
-}
-.PromoCarousel #slide-5 {
-  background-color: var(--color-ex-5);
-}
-.PromoCarousel #slide-6 {
-  background-color: var(--color-ex-6);
-}
-.PromoCarousel #slide-7 {
-  background-color: var(--color-ex-7);
-}
-.PromoCarousel #slide-8 {
-  background-color: var(--color-ex-8);
+
+@media (min-width: 714px) {
+  .PromoCarousel {
+    height: 350px;
+  }
+  .PromoCarousel .slide {
+    height: 350px;
+  }
 }
 
 /*# sourceMappingURL=PromoCarousel.css.map */
